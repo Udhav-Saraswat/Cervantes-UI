@@ -1,12 +1,22 @@
+//***************Csutom File ---> to be used only for Angular material Imports****************************//
+
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { MatButtonModule } from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
 
-
+const MaterialComponents = [
+  MatButtonModule,
+  MatSidenavModule,
+  MatListModule
+]
 
 @NgModule({
-  declarations: [],
   imports: [
-    CommonModule
+    MaterialComponents
+  ],
+  exports: [
+    MaterialComponents
   ]
 })
 export class AngularMaterialModule { }
