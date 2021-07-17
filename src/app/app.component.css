@@ -1,0 +1,6 @@
+.mat-toolbar {
+    background: url('src/assets/images/img1.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    height: 100px;
+  }
