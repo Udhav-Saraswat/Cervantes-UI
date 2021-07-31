@@ -1,43 +1,54 @@
-<div>
-  Main App Works !
-</div>
-<div>
-  <p>
-    <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
-      <span>Cervantes</span>
-      <span class="example-spacer"></span>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-      </button>
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-        <mat-icon>share</mat-icon>
-      </button>
-    </mat-toolbar>
-  </p>
-<p>
-  <mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Hi i am working.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
-    </mat-drawer>
-  
-    <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        Toggle sidenav
-      </button>
+<!DOCTYPE html>
+<html >
+<div class="bgImage">
+  <title>
+
+  </title>
+
+  <body>
+    <div>
+      <div>
+        <p>
+          <mat-toolbar color="primary">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+            <span>Cervantes</span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+              <mat-icon>share</mat-icon>
+            </button>
+          </mat-toolbar>
+        </p>
+        <p>
+          <mat-drawer-container class="example-container" autosize>
+            <mat-drawer #drawer class="example-sidenav" mode="side">
+              <p>Auto-resizing sidenav</p>
+              <p *ngIf="showFiller">Hi i am working.</p>
+              <button (click)="showFiller = !showFiller" mat-raised-button>
+                Toggle extra text
+              </button>
+            </mat-drawer>
+
+            <div class="example-sidenav-content">
+              <button type="button" mat-button (click)="drawer.toggle()">
+                Toggle sidenav
+              </button>
+            </div>
+
+          </mat-drawer-container>
+        </p>
+      </div>
+
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+      </div>
     </div>
-  
-  </mat-drawer-container>
-</p>
+
+  </body>
 </div>
-<div class="container-fluid">
-    
-    <router-outlet></router-outlet>
-   
-</div>
+
+</html>

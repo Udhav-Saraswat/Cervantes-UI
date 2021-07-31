@@ -1,10 +1,61 @@
 .example-card{
     margin-left: 100px;
-    max-width: 1000px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 100px;
   }
   
-.example-header-image {
-    /* background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg'); */
-    background-size: cover;
-  }
+  /* css for text over Image */
+
+  /* Container holding the image and the text */
+.textOverImage {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.textBox {
+  background-size: 10px;
+  background-color: rgb(37, 17, 17);
+  z-index: 0;
+  top: 100%;
+}
+
+/* for animations  */
+
+

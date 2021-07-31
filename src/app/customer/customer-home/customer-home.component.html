@@ -1,77 +1,86 @@
 <!DOCTYPE html>
+<html>
 
-
-<body>    
-  <div>
-    <img src="assets/images/worldInYourLap.jpg" height="800px" width="100%">
-    
-<!-- Using Angular Cards for rendering -->
+<body>
+  <div class="textOverImage" >
+    <img src="assets/images/worldInYourLap.jpg" alt="laptopWorld" height="800px" width="100%">
+    <div class="centered" >
+      <div class="textBox">
+        <div>
+        <h1 style="font-size:400%;color:rgb(233, 72, 72)">
+          Welcome to the World
+        </h1>
+        <h1 style="font-size:400%;color:rgb(233, 72, 72)">
+          of Cervantes !!
+        </h1>
+      </div>
+      <div>
+        <h1 style="font-weight: bold;font-size:200%;color:rgb(223, 71, 71)">
+          The Era of 5g Starts from here !
+        </h1>
+      </div>
+      <marquee behavior="scroll" direction="left" onmousedown="this.stop();" onmouseup="this.start();"
+        style="font-size:30px;color: black;">
+        
+      </marquee>
+    </div>
+    </div>
   </div>
-  <div fxLayout="row"  fxLayoutGap="12px"  [style.margin-top]="'12px'">
+  <!-- Using Angular Cards for rendering -->
 
-    <!-- Card 1 -->
-    <mat-card class="example-card">
+  <!-- Card 1 -->
+  <mat-grid-list cols="3" rowHeight="3.3:4.0" >
+
+    <mat-grid-tile>
+      <div>
+        <div fxLayout="row" fxLayoutGap="20px" [style.margin-top]="'20px'">
+          <mat-card class="example-card">
+            <!-- <div mat-card-avatar>   </div>  code for empty space above card 1 -->
+
+            <img mat-card-image src="assets/images/ethernetConnectivity.jpg" height="100%" width="100%">
+            <span class="mat-body-1">
+              <h1>The Speed of Light </h1>
+            </span>
+            <div class="mat-body-1"> Office like connectivity at home !</div>
+          </mat-card>
+        </div>
+      </div>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+
+      <div>
+        <div fxLayout="row" fxLayoutGap="20px" [style.margin-top]="'20px'">
+          <mat-card class="example-card">
+            <!-- <div mat-card-avatar>   </div>  code for empty space above card 1 -->
+
+            <img mat-card-image src="assets/images/SocialMediaAllInOne.jpg" height="100%" width="100%">
+            <span class="mat-body-1">
+              <h1>Top Notch Connectivity </h1>
+            </span>
+            <div class="mat-body-1"> Remain Socailly Connected all the time !</div>
+          </mat-card>
+        </div>
+      </div>
+
+    </mat-grid-tile>
+
+    <mat-grid-tile>
       
-     <div mat-card-avatar class="example-header-image"> </div>
+    </mat-grid-tile>
 
-      <img mat-card-image src="assets/images/worldInYourLap.jpg" height="100%" width="100%">
-      <span class="mat-body-2" >
-        <h1>Card 1</h1></span>
-      <div class="mat-body-1" >Heloo card 1</div> 
-    </mat-card>
+    <mat-grid-tile>
+      
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      
+    </mat-grid-tile> 
+
+  </mat-grid-list>
+
 
     <!-- Card 2 -->
-    <mat-card>
-      <div class="mat-body-2">Impératif</div>
-      <div class="mat-body-1">Se rapproche des langages de type impératif, tels que le Java : utilisation de classes, interfaces, héritage ...</div>
-    </mat-card>
-
-    <mat-card>
-      <div class="mat-body-2">Ressources</div>
-      <mat-list>
-        <mat-list-item>
-          <div matLine>
-            Sandbox TypeScript :
-            <button mat-button
-              (click)="playground.click()">Playground</button>
-            <a #playground href="http://www.typescriptlang.org/play/" target="_blank" [style.display]="'none'">TS Playground</a>
-          </div>
-        </mat-list-item>
-        <mat-list-item>
-          <div matLine>
-            Documentation : 
-            <button mat-button
-              (click)="documentation.click()">TS Doc</button>
-            <a #documentation href="http://www.typescriptlang.org/docs/home.html" target="_blank" [style.display]="'none'">TS Doc</a>
-          </div>
-        </mat-list-item>
-      </mat-list>
-
-    </mat-card>
-  </div>
-  
-  <div>
- 
-  </div>
-
-  <div> 
-    <div class='.mat-display-4'>
-      home component works
-    </div>
-
-    <div>
-      <mat-grid-list cols="2" rowHeight="2:1">
-        <mat-grid-tile>
-          <h1 color="primary"> Register Click Here ->   </h1>
-          <button mat-button color="primary">Primary</button>
-        </mat-grid-tile>
-        <mat-grid-tile>2</mat-grid-tile>
-        <mat-grid-tile>3</mat-grid-tile>
-        <mat-grid-tile>4</mat-grid-tile>
-      </mat-grid-list>
-    </div>   
-
-    </div>
 
 </body>
 <html>
